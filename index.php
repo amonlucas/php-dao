@@ -28,8 +28,18 @@ require_once ("config.php");
 //$aluno->setDessenha("passAluno");
 //$aluno->insert("Graca","SenhaGraca");
 
+
+//Alterar Usuario - Update
+//$usuario = new Usuario();
+//$usuario->loadById(7);
+//$usuario->update("Professor","Senha do Professor");
+
+//Delete
 $usuario = new Usuario();
 $usuario->loadById(7);
-$usuario->update("Professor","Senha do Professor");
+$usuario->delete(7);
+echo $usuario;
+
+
 
 ?>
