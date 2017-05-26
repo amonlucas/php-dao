@@ -17,8 +17,19 @@ require_once ("config.php");
 //echo json_encode($busca);
 
 //Autenticacao
+//$usuario = new Usuario();
+//$usuario->login("Maria","senha3");
+//echo $usuario;
+
+
+//Criando Usuario / INSERT
+//$aluno = new Usuario();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("passAluno");
+//$aluno->insert("Graca","SenhaGraca");
+
 $usuario = new Usuario();
-$usuario->login("Maria","senha3");
-echo $usuario;
+$usuario->loadById(7);
+$usuario->update("Professor","Senha do Professor");
 
 ?>
